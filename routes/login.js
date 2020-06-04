@@ -15,8 +15,8 @@ mongo.connect(url, {
     }
     db = client.db('login');
     let collection = db.collection('logincreds');
-    collection.insertOne({ email: "harsh@gmail.comm", pwd: "admin", role: "admin" });
-    collection.insertOne({ email: "user", pwd: "user", role: "user" });
+    //collection.insertOne({ email: "harsh@gmail.comm", pwd: "admin", role: "admin" });
+    //collection.insertOne({ email: "john@gmail.com", pwd: "user", role: "user" });
 })
 
 router.post('/doLogin', function (req, res, next) {
